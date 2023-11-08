@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.sp
 import com.example.meet_7.ui.theme.Meet_7Theme
 
 @Composable
-fun HomePage(onNextButtonClicked: () -> Unit)
+fun HalamanHome(onNextButtonClicked: () -> Unit)
 {
     val image = painterResource(id = R.drawable.es_teh)
 
