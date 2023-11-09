@@ -20,12 +20,14 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.meet_7.Data.SumberData.flavors
+
 
 enum class PengelolaHalaman {
     Home,
@@ -59,8 +61,8 @@ fun EsJumboAppBar(
 
 @Composable
 fun EsJumboApp(
-    viewModel: OrderViewModel = viewModel(),
-    navController: NavHostController = rememberNavController()
+    navController: NavHostController = rememberNavController(),
+    viewModel: OrderViewModel = viewModel()
 ) {
     Scaffold (
         topBar = {

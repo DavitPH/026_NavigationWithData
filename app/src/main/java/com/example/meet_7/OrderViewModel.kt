@@ -1,5 +1,6 @@
 package com.example.meet_7
 
+import androidx.lifecycle.ViewModel
 import com.example.meet_7.Data.OrderUIState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -9,7 +10,7 @@ import java.text.NumberFormat
 
 private const val HARGA_PER_CUP = 5000
 
-class OrderViewModel {
+class OrderViewModel: ViewModel() {
     private val _stateUI = MutableStateFlow(OrderUIState())
     val stateUI: StateFlow<OrderUIState> = _stateUI.asStateFlow()
 

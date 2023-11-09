@@ -81,3 +81,11 @@ fun HalamanHome(onNextButtonClicked: () -> Unit)
         }
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewHalamanHome() {
+    Meet_7Theme {
+        HalamanHome(onNextButtonClicked = {})
+    }
+}
